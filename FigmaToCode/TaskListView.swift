@@ -8,8 +8,61 @@
 import SwiftUI
 
 struct TaskListView: View {
+    
+    var tasks = Task.getDummyTask()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            Color("Background")
+                .ignoresSafeArea()
+            
+            ScrollView {
+                
+                VStack {
+                    
+                    HStack {
+                        Text("Today")
+                        Spacer()
+                        Text("\(tasks.count)")
+                        Image("ic-chevron")
+                    }
+                    .font(Font.taskText)
+                    
+                    ForEach(tasks) { task in
+                        HStack {
+                            Image("ic-check")
+                            Text(task.title)
+                                .font(Font.taskText)
+                            Spacer()
+                            VStack (alignment: .trailing, spacing: 4){
+                                Text("18:00")
+                                    .foregroundColor(Color("Alarm"))
+                                    .font(Font.taskAlarmText)
+                                Image("ic-alarm")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .toolbar {
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+                Image("ic-stack")
+            }
+            
+            ToolbarItem(placement: .principal){
+                Text("Today")
+                    .font(.navTitle)
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Image("ic-more")
+            }
+        }
+        
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

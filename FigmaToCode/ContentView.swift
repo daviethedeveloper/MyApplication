@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
        
         TabView{
-            
-            TaskListView()
-                .tabItem{
-                    Image("ic-tasklist")
-                        .renderingMode(.template)
+            NavigationView{
+                TaskListView()
+                
+            }
+            .tabItem{
+                Image("ic-tasklist")
+                    .renderingMode(.template)
                 }
             
             InboxView()

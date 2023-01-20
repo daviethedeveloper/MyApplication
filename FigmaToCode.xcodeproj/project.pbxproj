@@ -21,6 +21,7 @@
 		BC04CD13297B2216005A9189 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CD12297B2216005A9189 /* SettingsView.swift */; };
 		BC04CD15297B2226005A9189 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CD14297B2226005A9189 /* InboxView.swift */; };
 		BC04CD17297B223F005A9189 /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CD16297B223F005A9189 /* RemindersView.swift */; };
+		BC528AFE297B2EF000C8FDFA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC528AFD297B2EF000C8FDFA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		BC04CD12297B2216005A9189 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BC04CD14297B2226005A9189 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		BC04CD16297B223F005A9189 /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
+		BC528AFD297B2EF000C8FDFA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				BC04CD0E297B1B44005A9189 /* FontStyles.swift */,
 				BC04CCE2297B1490005A9189 /* Assets.xcassets */,
 				BC04CCE4297B1490005A9189 /* Preview Content */,
+				BC528AFD297B2EF000C8FDFA /* Task.swift */,
 			);
 			path = FigmaToCode;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC528AFE297B2EF000C8FDFA /* Task.swift in Sources */,
 				BC04CD13297B2216005A9189 /* SettingsView.swift in Sources */,
 				BC04CD17297B223F005A9189 /* RemindersView.swift in Sources */,
 				BC04CD15297B2226005A9189 /* InboxView.swift in Sources */,
