@@ -14,6 +14,9 @@
 		BC04CCF0297B1490005A9189 /* FigmaToCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CCEF297B1490005A9189 /* FigmaToCodeTests.swift */; };
 		BC04CCFA297B1490005A9189 /* FigmaToCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CCF9297B1490005A9189 /* FigmaToCodeUITests.swift */; };
 		BC04CCFC297B1490005A9189 /* FigmaToCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CCFB297B1490005A9189 /* FigmaToCodeUITestsLaunchTests.swift */; };
+		BC04CD0A297B19FB005A9189 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC04CD09297B19FB005A9189 /* Inter-Bold.otf */; };
+		BC04CD0C297B1A14005A9189 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC04CD0B297B1A14005A9189 /* Inter-SemiBold.otf */; };
+		BC04CD0F297B1B44005A9189 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04CD0E297B1B44005A9189 /* FontStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		BC04CCF5297B1490005A9189 /* FigmaToCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FigmaToCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC04CCF9297B1490005A9189 /* FigmaToCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaToCodeUITests.swift; sourceTree = "<group>"; };
 		BC04CCFB297B1490005A9189 /* FigmaToCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaToCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC04CD09297B19FB005A9189 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		BC04CD0B297B1A14005A9189 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		BC04CD0D297B1A94005A9189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BC04CD0E297B1B44005A9189 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,13 @@
 		BC04CCDD297B148C005A9189 /* FigmaToCode */ = {
 			isa = PBXGroup;
 			children = (
+				BC04CD0D297B1A94005A9189 /* Info.plist */,
+				BC04CD08297B19CB005A9189 /* Fonts */,
 				BC04CCDE297B148C005A9189 /* FigmaToCodeApp.swift */,
 				BC04CCE0297B148C005A9189 /* ContentView.swift */,
 				BC04CCE2297B1490005A9189 /* Assets.xcassets */,
 				BC04CCE4297B1490005A9189 /* Preview Content */,
+				BC04CD0E297B1B44005A9189 /* FontStyles.swift */,
 			);
 			path = FigmaToCode;
 			sourceTree = "<group>";
@@ -125,6 +135,15 @@
 				BC04CCFB297B1490005A9189 /* FigmaToCodeUITestsLaunchTests.swift */,
 			);
 			path = FigmaToCodeUITests;
+			sourceTree = "<group>";
+		};
+		BC04CD08297B19CB005A9189 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC04CD0B297B1A14005A9189 /* Inter-SemiBold.otf */,
+				BC04CD09297B19FB005A9189 /* Inter-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +252,8 @@
 			files = (
 				BC04CCE6297B1490005A9189 /* Preview Assets.xcassets in Resources */,
 				BC04CCE3297B1490005A9189 /* Assets.xcassets in Resources */,
+				BC04CD0A297B19FB005A9189 /* Inter-Bold.otf in Resources */,
+				BC04CD0C297B1A14005A9189 /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +280,7 @@
 			files = (
 				BC04CCE1297B148C005A9189 /* ContentView.swift in Sources */,
 				BC04CCDF297B148C005A9189 /* FigmaToCodeApp.swift in Sources */,
+				BC04CD0F297B1B44005A9189 /* FontStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FigmaToCode/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FigmaToCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FigmaToCode/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FigmaToCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
