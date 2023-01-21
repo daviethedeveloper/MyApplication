@@ -115,6 +115,7 @@
 				BC04CD08297B19CB005A9189 /* Fonts */,
 				BC04CCDE297B148C005A9189 /* FigmaToCodeApp.swift */,
 				BC04CCE0297B148C005A9189 /* ContentView.swift */,
+				BC528AFD297B2EF000C8FDFA /* Task.swift */,
 				BC04CD10297B21FC005A9189 /* TaskListView.swift */,
 				BC04CD12297B2216005A9189 /* SettingsView.swift */,
 				BC04CD14297B2226005A9189 /* InboxView.swift */,
@@ -122,7 +123,6 @@
 				BC04CD0E297B1B44005A9189 /* FontStyles.swift */,
 				BC04CCE2297B1490005A9189 /* Assets.xcassets */,
 				BC04CCE4297B1490005A9189 /* Preview Content */,
-				BC528AFD297B2EF000C8FDFA /* Task.swift */,
 			);
 			path = FigmaToCode;
 			sourceTree = "<group>";

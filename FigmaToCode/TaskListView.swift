@@ -19,32 +19,65 @@ struct TaskListView: View {
             
             ScrollView {
                 
-                VStack {
+                
+                ZStack{
                     
-                    HStack {
-                        Text("Today")
-                        Spacer()
-                        Text("\(tasks.count)")
-                        Image("ic-chevron")
-                    }
-                    .font(Font.taskText)
+                    Rectangle()
+                        .foregroundColor(.white)
                     
-                    ForEach(tasks) { task in
+                    VStack {
+                        
                         HStack {
-                            Image("ic-check")
-                            Text(task.title)
-                                .font(Font.taskText)
+                            Text("Today")
                             Spacer()
-                            VStack (alignment: .trailing, spacing: 4){
-                                Text("18:00")
-                                    .foregroundColor(Color("Alarm"))
-                                    .font(Font.taskAlarmText)
-                                Image("ic-alarm")
+                            Text("\(tasks.count)")
+                            Image("ic-chevron")
+                        }
+                        .font(Font.taskText)
+                        
+                        ForEach(tasks) { task in
+                            HStack {
+                                Image("ic-check")
+                                Text(task.title)
+                                    .font(Font.taskText)
+                                Spacer()
+                                VStack (alignment: .trailing, spacing: 4){
+                                    Text("18:00")
+                                        .foregroundColor(Color("Alarm"))
+                                        .font(Font.taskAlarmText)
+                                    Image("ic-alarm")
+                                }
                             }
                         }
                     }
+                    .padding(.vertical, 8)
+                    .padding(.horizontal, 16)
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 16)
+                
+            }
+            VStack{
+                Spacer()
+                
+                HStack{
+                    Spacer()
+                    
+                    Button{
+                        // TODO: Add new task
+                    }label: {
+                        Image(systemName: "plus.circle.fill")
+                            .resizable()
+                            .frame(width: 64, height: 64)
+                            .foregroundColor(Color.accentColor)
+                            .padding(.bottom, 28)
+                            .padding(.trailing, 24)
+                    }
+                    
+                    
                 }
             }
+            
         }
         .toolbar {
             
