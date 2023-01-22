@@ -1,7 +1,12 @@
 # MobileApp Overview
-I will create a fun mobile app that will allow users to keep track of their tasks throughout their day. 
-An easier Interface for anyone to use on the go. 
+I will create a fun mobile app that will allow users to keep track of their tasks throughout their day.
+An easier Interface for anyone to use on the go.
 
+<br>
+
+<img src="Assets/pictureApp.png"
+     alt="Figma Design Project"/>
+<br>
 
 The purpose of this app is to help individuals, particularly students, stay organized throughout the day by keeping track of tasks they need to accomplish. It includes a feature to keep track of time, like an alarm, to help users stay on track with their schedule. The goal is to help users manage their assignments and tasks more effectively and efficiently.
 
@@ -21,5 +26,5 @@ The tools used to develop the app include Figma for the design of the applicatio
 
 
 * Create more features
-* A cleaner design 
+* A cleaner design
 * Implemenet a Data base to store information
