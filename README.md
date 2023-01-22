@@ -14,13 +14,12 @@ The tools used to develop the app include Figma for the design of the applicatio
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [CodeWithChris](https://www.youtube.com/watch?v=T8spmslPII8)
 
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+
 * Create more features
 * A cleaner design 
 * Implemenet a Data base to store information
