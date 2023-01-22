@@ -4,8 +4,11 @@ An easier Interface for anyone to use on the go.
 
 <br>
 
-<img src="Assets/pictureApp.png"
-     alt="Figma Design Project"/>
+<center><img src="Assets/pictureApp.png"
+     alt="Figma Design Project"
+     width="200"
+     height="400" />
+     </center>
 <br>
 
 The purpose of this app is to help individuals, particularly students, stay organized throughout the day by keeping track of tasks they need to accomplish. It includes a feature to keep track of time, like an alarm, to help users stay on track with their schedule. The goal is to help users manage their assignments and tasks more effectively and efficiently.
